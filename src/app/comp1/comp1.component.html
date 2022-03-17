@@ -1,0 +1,17 @@
+<div  *ngIf="!yes1"class="outer">
+    <H1>{{this?.name}} {{selected}}</H1>
+
+    <div class="yes-btn"><button (click)="yes()">Yes</button></div>
+    <div class="no-btn">
+    <button (click)="no()">No</button>
+</div>
+</div>
+
+<div *ngIf="yes1" class="outer">
+ 
+    <h1>Told you 😁 😹 😹</h1>
+    <video autoplay width="100%" height="300px">
+        <source src="./assets/dog.mp4" type="video/mp4">
+    </video>
+</div>
+
